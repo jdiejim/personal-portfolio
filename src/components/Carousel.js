@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { getArrow } from '../helper';
 import Arrow from './Arrow';
 import Project from './Project';
 import './styles/Carousel.css';
@@ -30,8 +31,8 @@ class Carousel extends Component {
     const array = [1, 2, 3];
     const viewPosition = { left: `${position * -100}%` };
     const projects = array.map((project, i) => <Project key={project} index={i} />);
-    const left = position !== 0 ? <Arrow handleOnClick={this.handleDecrement} left /> : <span />;
-    const right = position !== projects.length ? <Arrow handleOnClick={this.handleIncrement} />: <span />;
+    const left = position !== 0 ? getArrow(true, this.handleDecrement) : <span />;
+    const right = position !== projects.length - 1 ? getArrow(false, this.handleIncrement) : <span />;
 
     return (
       <section id="carousel">
