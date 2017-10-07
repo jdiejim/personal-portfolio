@@ -1,5 +1,5 @@
-@keyframes slide-down {
-  from { transform: translateY(-100%); }
+@keyframes slide-up {
+  from { transform: translateY(100%); }
   to   { transform: translateY(0%); }
 }
 
@@ -20,7 +20,7 @@
   width: 60%;
   height: 400px;
   margin: 50px auto;
-  animation: slide-down 0.3s;
+  animation: slide-up 0.3s;
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2), 0 14px 45px rgba(0, 0, 0, 0.2);
 }
 

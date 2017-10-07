@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import Header from './Header';
 import ProjectView from './ProjectView';
 import About from './About';
+import Skills from './Skills';
 import './styles/App.css';
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
         <Header />
         <Route path="/projects" component={ProjectView} />
         <Route path="/about" component={About} />
+        <Route path="/skills" component={Skills} />
       </section>
     );
   }
