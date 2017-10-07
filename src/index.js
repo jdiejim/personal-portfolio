@@ -9,7 +9,7 @@ const router = (
   <Router>
     <Route path="/" component={App} />
   </Router>
-)
+);
 
 ReactDOM.render(router, document.getElementById('root'));
 registerServiceWorker();
