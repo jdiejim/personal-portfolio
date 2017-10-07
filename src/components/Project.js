@@ -1,15 +1,16 @@
 import React from 'react';
 import './styles/Project.css';
 
-function Project({ index }) {
-  const image = require(`../assets/${'wellness_game'}.${'gif'}`);
+function Project({ index, project }) {
+  const { sprite, description, title } = project;
+  const image = require(`../assets/${sprite}`);
   const position = { left: `${100 * index}%`};
   const bg = { backgroundImage: `url(${image})` };
 
   return (
     <article style={position} id="project">
       <section className="project-profile">
-        <h2 className="project-title">Wellness Game</h2>
+        <h2 className="project-title">{title}</h2>
         <div style={bg} className="project-image" />
       </section>
       <section className="project-info">
@@ -17,7 +18,7 @@ function Project({ index }) {
           <a className="project-link" href="">Github</a>
           <a className="project-link" href="">Github</a>
         </section>
-        <p className="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vero eaque culpa quae est nam, eos, neque iste architecto repellat quisquam, blanditiis nulla deleniti ut harum deserunt sed dolorum doloremque.</p>
+        <p className="project-description">{description}</p>
       </section>
     </article>
   )

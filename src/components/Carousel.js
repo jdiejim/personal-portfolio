@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { getArrow } from '../helper';
 import Arrow from './Arrow';
 import Project from './Project';
+import projectsData from '../projects';
 import './styles/Carousel.css';
 
 class Carousel extends Component {
@@ -28,9 +29,8 @@ class Carousel extends Component {
 
   render() {
     const { position } = this.state;
-    const array = [1, 2, 3];
     const viewPosition = { left: `${position * -100}%` };
-    const projects = array.map((project, i) => <Project key={project} index={i} />);
+    const projects = projectsData.map((project, i) => <Project key={project.id} index={i} project={project} />);
     const left = position !== 0 ? getArrow(true, this.handleDecrement) : <span />;
     const right = position !== projects.length - 1 ? getArrow(false, this.handleIncrement) : <span />;
 
