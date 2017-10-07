@@ -31,18 +31,18 @@ class Carousel extends Component {
     const { position } = this.state;
     const viewPosition = { left: `${position * -100}%` };
     const projects = projectsData.map((project, i) => <Project key={project.id} index={i} project={project} />);
-    const left = position !== 0 ? getArrow(true, this.handleDecrement) : <span />;
-    const right = position !== projects.length - 1 ? getArrow(false, this.handleIncrement) : <span />;
+    const left = position !== 0 ? getArrow(true, this.handleDecrement, 'left') : <span />;
+    const right = position !== projects.length - 1 ? getArrow(false, this.handleIncrement, 'right') : <span />;
 
     return (
       <section id="carousel">
-        {left}
         <section className="carousel-list">
+          {left}
+          {right}
           <section style={viewPosition} className="carousel-viewbox">
             {projects}
           </section>
         </section>
-        {right}
       </section>
     );
   }
