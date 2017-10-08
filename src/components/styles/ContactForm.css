@@ -1,0 +1,132 @@
+#contact-form-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+  padding: 20px 10px;
+  background-color: #FFF;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1), 0 14px 45px rgba(0, 0, 0, 0.1);  
+  transition: all 0.2s;
+}
+
+.contact-hidden #contact-form-wrapper {
+  transform: translateX(100%);
+}
+
+.close-contact-form {
+  align-self: flex-end;
+  width: 50px;
+  margin: 0 10px 10px;
+  color: #288AE2;
+  border: none;
+  border-radius: 0px;
+  font-size: 18px;
+  font-weight: lighter;
+  text-decoration: underline;
+  transition: all 0.2s;
+}
+
+.close-contact-form:hover {
+  transform: scale(1.1);
+}
+
+.contact-form-title {
+  margin-bottom: 20px;
+  color: #353535;
+  font-weight: lighter;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-input {
+  width: 95%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.contact-input:focus {
+  outline: none;
+  border-bottom: 1px solid #288AE2;
+}
+
+.contact-textarea {
+  width: 95%;
+  height: 200px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #BDBDBD;
+  font-size: 20px;
+  font-weight: lighter;
+  resize: none;
+}
+
+.contact-textarea:focus {
+  outline: none;
+  border: 1px solid #288AE2;
+}
+
+.contact-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #BDBDBD;
+  font-weight: lighter;
+}
+.contact-input::-moz-placeholder { /* Firefox 19+ */
+  color: #BDBDBD;
+  font-weight: lighter;
+}
+.contact-input:-ms-input-placeholder { /* IE 10+ */
+  color: #BDBDBD;
+  font-weight: lighter;
+}
+.contact-input:-moz-placeholder { /* Firefox 18- */
+  color: #BDBDBD;
+  font-weight: lighter;
+}
+
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #BDBDBD;
+  font-weight: lighter;
+}
+textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #BDBDBD;
+  font-weight: lighter;
+}
+textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #BDBDBD;
+  font-weight: lighter;
+}
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: #BDBDBD;
+  font-weight: lighter;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  padding: 5px 20px;
+  margin: 0 10px 20px;
+  color: #FFF;
+  background-color: #288AE2;
+  border: 1px solid #288AE2;
+  border-radius: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.contact-btn:hover {
+  opacity: 0.5;
+}
