@@ -69,15 +69,6 @@
   animation: slide-right-about 0.5s;
 }
 
-.profile-pics {
-  width: 450px;
-  height: 450px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
-}
-
 .about-links {
   display: flex;
   align-items: center;

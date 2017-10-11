@@ -3,13 +3,13 @@ import github from '../assets/github.svg';
 import twitter from '../assets/twitter.svg';
 import linkedin from '../assets/linkedin.svg';
 import profile from '../assets/profile.jpg';
+import ProfileCarousel from './ProfileCarousel';
 import './styles/About.css';
 
 function About() {
   const githubLogo = { backgroundImage: `url(${github})` };
   const twitterLogo = { backgroundImage: `url(${twitter})` };
   const linkedinLogo = { backgroundImage: `url(${linkedin})` };
-  const profilePic = { backgroundImage: `url(${profile})` };
 
   return (
     <section id="about">
@@ -34,7 +34,7 @@ function About() {
         </section>
       </section>
       <section className="about-profile">
-        <div style={profilePic} className="profile-pics" />
+        <ProfileCarousel />
       </section>
     </section>
   );

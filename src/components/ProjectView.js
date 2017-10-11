@@ -36,7 +36,7 @@ class ProjectView extends Component {
 
     return (
       <section id="project-view">
-        <Canvas />
+        {/* <Canvas /> */}
         <section className="project-list">
           <Arrow id="left" handleOnClick={left} />
           <Arrow id="right" handleOnClick={right} />
