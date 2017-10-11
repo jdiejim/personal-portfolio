@@ -1,0 +1,56 @@
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0%); }
+}
+
+@keyframes slide-left {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(-100%); }
+}
+
+@keyframes slide-right {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(100%); }
+}
+
+#project-view {
+  position: relative;
+  z-index: 100;
+  display: grid;
+  width: 60%;
+  height: 400px;
+  margin: 50px auto;
+  animation: slide-up 0.3s;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2), 0 14px 45px rgba(0, 0, 0, 0.2);
+}
+
+.project-list {
+  /* border: 20px solid orange; */
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+.project-viewbox {
+  position: relative;
+  top: 0;
+  height: 100%;
+  transition: left 0.3s;
+}
+
+#left {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  animation: slide-left 0.3s;
+  transform: translateX(-100%);
+}
+
+#right {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  animation: slide-right 0.3s;
+  transform: translateX(100%);
+}

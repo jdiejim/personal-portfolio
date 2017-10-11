@@ -12,7 +12,7 @@ function Project({ index, project }) {
   return (
     <article style={style} id="project">
       <section style={bgColor} className="project-profile">
-        <h2 style={titleColor} className="project-title">{title}</h2>
+        {/* <h2 style={titleColor} className="project-title">{title}</h2> */}
         <div style={bgImage} className="project-image" />
       </section>
       {/* <section className="project-info">

@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles/Arrow.css';
 
-function Arrow({ id, left, handleOnClick }) {
-  if (left) {
+function Arrow({ id, handleOnClick }) {
+  if (id === 'left') {
     return (
       <button id={id} onClick={handleOnClick} className="arrow-wrapper">
         <svg className="arrow" viewBox="0 0 129 129">
