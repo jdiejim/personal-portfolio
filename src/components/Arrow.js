@@ -11,7 +11,7 @@ function Arrow({ id, handleOnClick }) {
           </g>
         </svg>
       </button>
-    )
+    );
   }
 
   return (
@@ -22,7 +22,7 @@ function Arrow({ id, handleOnClick }) {
         </g>
       </svg>
     </button>
-  )
+  );
 }
 
 export default Arrow;
