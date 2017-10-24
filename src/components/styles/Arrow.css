@@ -3,8 +3,8 @@
   align-items: center;
   width: 55px;
   height: 55px;
-  border-radius: 50%;
   justify-content: center;
+  border: none;
   transition: all 0.2s;
 }
 

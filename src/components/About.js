@@ -13,7 +13,6 @@ function About() {
 
   return (
     <section id="about">
-      {/* {<div className="about-bg" />} */}
       <section className="about-info">
         <section id="banner">
           <h1 className="banner-title">Juan Jimenez</h1>
